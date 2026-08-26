@@ -24,9 +24,7 @@ POST /products/remove/:id
   - Imagens dos produtos.
   - Página de detalhes.
   - Formulários estilizados.
-  - Responsividade para dispositivos móveis.
     
-
 
 https://github.com/user-attachments/assets/00230d4d-e389-4745-9330-5e8022c4d5dd
 
