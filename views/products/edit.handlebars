@@ -6,11 +6,13 @@
         <a class="back-link" href="/products">← Back to products</a>
     </div>
 
-    <form action="/edit" method="POST" class="product-form">
+    <form action="/products/edit" method="POST" class="product-form">
         <div class="form-header">
             <span>02</span>
             <h2>Edit product</h2>
         </div>
+
+        <input type="hidden" name="id" value="{{product._id}}">
 
         <div class="form-control">
             <label for="name">Product name</label>

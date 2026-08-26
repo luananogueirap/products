@@ -50,7 +50,7 @@ class Product {
         conn
         .db()
         .collection('products')
-        .updateOne({_id: ObjectId(id)}, {$set: this})
+        .updateOne({_id: new ObjectId(id)}, {$set: this})
 
         return
     }
