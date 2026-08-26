@@ -1,0 +1,25 @@
+<main class="product-page">
+    <a class="back-link" href="/products">← Back to products</a>
+
+    <div class="product-detail-image">
+        {{#if product.image}}
+            <img src="{{product.image}}" alt="{{product.name}}" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1507473885765-e6ed057f782c?auto=format&fit=crop&w=900&q=85';">
+        {{else}}
+            <img src="https://images.unsplash.com/photo-1507473885765-e6ed057f782c?auto=format&fit=crop&w=900&q=85" alt="Lamp">
+        {{/if}}
+    </div>
+
+    <div class="product-detail-copy">
+        <span class="eyebrow">Product details</span>
+        <h1>{{product.name}}</h1>
+        <strong class="product-price">R${{product.price}}</strong>
+        <p class="product-description">{{product.description}}</p>
+        <div class="product-detail-actions">
+            <button class="quantity" type="button">− &nbsp; 1 &nbsp; +</button>
+            <button class="btn" type="button">Add to cart <span aria-hidden="true">↗</span></button>
+        </div>
+        <form action="/products/remove/{{product._id}}" method="POST" class="delete-form">
+            <input type="submit" value="Delete product" class="delete-button">
+        </form>
+    </div>
+</main>

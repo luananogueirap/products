@@ -3,9 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Node.JS + MongoDB</title>
+    <title>Products</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/styles.css">
 </head>
 <body>
-    
+    <nav class="site-nav">
+        <a class="url-logo" href="/products" aria-label="Products home">
+            <img src="/img/logo.svg" alt="Logo">
+        </a>
+        <div class="nav-links">
+            <a class="active" href="/products">Products</a>
+        </div>
+
+        <button class="favorite-button" type="button" aria-label="Favorites">♥</button>
+
+    </nav>
+
+    <main class="container">
+        {{{body}}}
+    </main>
 </body>
 </html>
