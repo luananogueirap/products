@@ -1,5 +1,3 @@
-O projeto é uma aplicação web de gerenciamento de produtos, desenvolvida com Node.js, Express, Handlebars e MongoDB.
-
 ## Funcionalidades principais:
 - Listagem de produtos em /products.
 - Cadastro de produtos em /products/create.
