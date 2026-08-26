@@ -606,6 +606,25 @@ a {
     font-weight: 700;
 }
 
+.product-actions {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.edit-link {
+    color: var(--ink);
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.edit-link:hover {
+    color: var(--red);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
 .empty-products {
     grid-column: 1 / -1;
     margin: 0;

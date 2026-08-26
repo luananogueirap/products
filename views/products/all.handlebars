@@ -39,7 +39,10 @@
                             <h3>{{this.name}}</h3>
                             <strong>R${{this.price}}</strong>
                             <p>{{this.description}}</p>
-                            <a class="product-link" href="/products/{{this._id}}">View product <span aria-hidden="true">↗</span></a>
+                            <div class="product-actions">
+                                <a class="product-link" href="/products/{{this._id}}">View product <span aria-hidden="true">↗</span></a>
+                                <a class="edit-link" href="/products/edit/{{this._id}}">Edit product</a>
+                            </div>
                         </div>
                     </article>
                 {{/each}}

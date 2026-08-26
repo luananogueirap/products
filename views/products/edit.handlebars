@@ -1,0 +1,39 @@
+<section class="form-page">
+    <div class="form-intro">
+        <span class="eyebrow">Products</span>
+        <h1>Edit your<br><em>product.</em></h1>
+        <p>Update the information and keep your product collection up to date.</p>
+        <a class="back-link" href="/products">← Back to products</a>
+    </div>
+
+    <form action="/edit" method="POST" class="product-form">
+        <div class="form-header">
+            <span>02</span>
+            <h2>Edit product</h2>
+        </div>
+
+        <div class="form-control">
+            <label for="name">Product name</label>
+            <input id="name" type="text" name="name" placeholder="Ex: Luma Lamp" value="{{product.name}}" required>
+        </div>
+
+        <div class="form-control">
+            <label for="image">Product image</label>
+            <input id="image" type="url" name="image" placeholder="https://..." value="{{product.image}}" required>
+        </div>
+
+        <div class="form-control">
+            <label for="price">Price</label>
+            <input id="price" type="text" name="price" placeholder="Ex: 100$" value="{{product.price}}" required>
+        </div>
+
+        <div class="form-control">
+            <label for="description">Description</label>
+            <textarea id="description" name="description" placeholder="Tell us about your product..." required>{{product.description}}</textarea>
+        </div>
+
+        <button type="submit" class="btn">
+            Save changes <span aria-hidden="true">↗</span>
+        </button>
+    </form>
+</section>

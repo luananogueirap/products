@@ -2,10 +2,13 @@ const express = require('express')
 const router = express.Router()
 
 const ProductController = require('../controllers/ProductController')
+const Product = require('../models/Product')
 
 router.get('/create', ProductController.createProduct)
 router.post('/create', ProductController.createProductPost)
 router.post('/remove/:id', ProductController.removeProduct)
+router.get('/edit/:id', ProductController.editProduct)
+router.post('/edit', ProductController.editProductPost)
 router.get('/:id', ProductController.getProduct)
 router.get('/', ProductController.showProducts)
 
