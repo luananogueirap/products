@@ -1,7 +1,11 @@
+
+<img width="788" height="436" alt="Captura de tela 2026-09-10 154310" src="https://github.com/user-attachments/assets/9a10143d-fc0c-4902-abfd-eb900fd84af6" />
+
+
 ## Funcionalidades principais:
 - Listagem de produtos em /products.
 - Cadastro de produtos em /products/create.
-- 
+  
 - Armazenamento de:
   - Nome
   - Imagem por URL
@@ -26,5 +30,4 @@ POST /products/remove/:id
   - Formulários estilizados.
     
 
-https://github.com/user-attachments/assets/00230d4d-e389-4745-9330-5e8022c4d5dd
 
