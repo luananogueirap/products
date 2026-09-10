@@ -30,5 +30,4 @@ POST /products/remove/:id
   - Formulários estilizados.
     
 
-https://github.com/user-attachments/assets/00230d4d-e389-4745-9330-5e8022c4d5dd
 
