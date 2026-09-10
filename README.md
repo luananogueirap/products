@@ -1,7 +1,7 @@
 ## Funcionalidades principais:
 - Listagem de produtos em /products.
 - Cadastro de produtos em /products/create.
-- 
+  
 - Armazenamento de:
   - Nome
   - Imagem por URL
